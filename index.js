@@ -13,8 +13,17 @@ window.onload = () => {
     const currentDay = days[currentDate.getDay()]
 document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent =
     "Current Day: " + currentDay;
-    
-    const uTcTime = currentDate.getTime()
-    document.querySelector('[data-testid="currentUTCTime"]').textContent = 'UTC Time in Milliseconds: ' + uTcTime
+    updateUTCTime();
+    setInterval(updateUTCTime, 1000); 
+   
 
 }
+function updateUTCTime() {
+    const uTcTime = Date.now();
+    document.querySelector('[data-testid="currentUTCTime"]').textContent = 'UTC Time in Milliseconds: ' + uTcTime;
+}
+
+
+
+
+
