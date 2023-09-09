@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 1</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <main>
-        <div data-testid="slackUserName">
-<p>Slack Name: Odion Akhetuamhen</p>
-        </div>
 
-    <div>
-        <img src="" alt="odion avatar" data-testid="slackDisplayImage">
-    </div>
-<div data-testid="currentDayOfTheWeek">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-</div>
-    <div data-testid="currentUTCTime">
-    
-    </div>
-    <div data-testid="myTrack">
-        Track: Frontend
-    </div>
-    <a href="https://github.com/your_username/your_repository" data-testid="githubURL">
-        View on GitHub
-    </a>
-    </main>
-    
-    <script src="index.js"></script>
-</body>
+    <body>
+        <main>
+            <header>
+                <div data-testid="slackUserName">
+                    <p>Slack Name: Odion Akhetuamhen</p>
+                </div>
+                <div>
+                    <img src="https://ca.slack-edge.com/T05FFAA91JP-U05R7L260PR-625c5cc081ca-512"
+                        alt="odion akhetuamhen" data-testid="slackDisplayImage">
+                </div>
+            </header>
+            <section>
+                <div data-testid="currentDayOfTheWeek">
+                    <!-- Day of the week -->
+                </div>
+                <div data-testid="currentUTCTime">
+                    <!-- current time -->
+                </div>
+                <div data-testid="myTrack">
+                    Track: Frontend
+                </div>
+            </section>
+            <footer>
+                <a target="_blank" href="https://github.com/OdionAkhes/HNG_task1" data-testid="githubURL">
+                    View on GitHub
+                </a>
+            </footer>
+        </main>
+        <script src="index.js"></script>
+    </body>
+
 </html>
